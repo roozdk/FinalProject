@@ -8,4 +8,6 @@ WORKDIR /var/www/html
 RUN rm *
 
 EXPOSE 80
-CMD ["apache2ctl", "-D", "FOREGROUND"]
+
+ CMD ["apache2ctl", "-D", "FOREGROUND"]
+ 
