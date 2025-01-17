@@ -4,14 +4,14 @@ $connect = mysqli_connect(
     'db', // Service name in Docker Compose
     'root', // Username (e.g., root)
     '123', // Password
-    'mydb' // Database name
+    'mydb' // Database name 
 );
 
 if (!$connect) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-echo "<h1>Word Synonym Search</h1>";
+echo "<h1> Word Synonyms Search </h1>";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['word'])) {
     $word = mysqli_real_escape_string($connect, $_POST['word']); // Sanitize user input
