@@ -22,9 +22,8 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
-
 --
--- Table structure for table `db`
+-- Table structure for table `db` 
 --
 
 CREATE TABLE `db` (
